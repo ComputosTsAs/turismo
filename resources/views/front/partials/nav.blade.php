@@ -11,14 +11,14 @@
             <ul class="navbar-nav">
                 @if (Request::is('/'))
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#lugares">Lugares</a></li>
-                    <li><a href="#noticias">Noticias</a></li>
-                    <li><a href="#eventos">Eventos</a></li>
-                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#playas">Playas</a></li>
+                    <li><a href="#experiencias">Experiencias</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#instagram">Instagram</a></li>
                 @else
                     <li><a href="{!! url('/') !!}">Inicio</a></li>
-                    <li><a href="{!! route('news') !!}">Noticias</a></li>
-                    <li><a href="{!! route('events') !!}">Eventos</a></li>
+                    <li><a href="{!! route('news') !!}">Experiencias</a></li>
+                    <li><a href="{!! route('events') !!}">Servicios</a></li>
                 @endif
                 @auth
                     <li><a href="{!! route('dashboard') !!}">Panel</a></li>

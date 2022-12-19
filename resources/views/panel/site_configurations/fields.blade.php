@@ -4,7 +4,7 @@
     <div class="form-group col-sm-6">
         {!! Field::text('title_place', null, ['label' => 'Título sección lugares *', 'data-validation' => 'required length', 'data-validation-length' => '1-191']) !!}
     </div>
-    
+
     <!-- Subtitle Places Field -->
     <div class="form-group col-sm-6">
         {!! Field::text('subtitle_place', null, ['label' => 'Subtítulo sección lugares *', 'data-validation' => 'required length', 'data-validation-length' => '1-191']) !!}
@@ -14,12 +14,12 @@
 <div class="row">
     <!-- Title News Field -->
     <div class="form-group col-sm-6">
-        {!! Field::text('title_news', null, ['label' => 'Título sección noticias *', 'data-validation' => 'required length', 'data-validation-length' => '1-191']) !!}
+        {!! Field::text('title_news', null, ['label' => 'Título sección experiencias *', 'data-validation' => 'required length', 'data-validation-length' => '1-191']) !!}
     </div>
-    
+
     <!-- Subtitle News Field -->
     <div class="form-group col-sm-6">
-        {!! Field::text('subtitle_news', null, ['label' => 'Subtítulo sección noticias *', 'data-validation' => 'required length', 'data-validation-length' => '1-191']) !!}
+        {!! Field::text('subtitle_news', null, ['label' => 'Subtítulo sección experiencias *', 'data-validation' => 'required length', 'data-validation-length' => '1-191']) !!}
     </div>
 </div>
 
@@ -28,7 +28,7 @@
     <div class="form-group col-sm-6">
         {!! Field::text('title_events', null, ['label' => 'Título sección eventos *', 'data-validation' => 'required length', 'data-validation-length' => '1-191']) !!}
     </div>
-    
+
     <!-- Subtitle Events Field -->
     <div class="form-group col-sm-6">
         {!! Field::text('subtitle_events', null, ['label' => 'Subtítulo sección eventos *', 'data-validation' => 'required length', 'data-validation-length' => '1-191']) !!}
@@ -40,7 +40,7 @@
     <div class="form-group col-sm-6">
         {!! Field::text('title_team', null, ['label' => 'Título sección equipo *', 'data-validation' => 'required length', 'data-validation-length' => '1-191']) !!}
     </div>
-    
+
     <!-- Subtitle Team Field -->
     <div class="form-group col-sm-6">
         {!! Field::text('subtitle_team', null, ['label' => 'Subtítulo sección equipo *', 'data-validation' => 'required length', 'data-validation-length' => '1-191']) !!}
@@ -64,7 +64,7 @@
     <div class="form-group col-sm-12 col-lg-12">
         {!! Field::textarea('description_team', null, ['class' => 'form-control my-editor', 'label' => 'Texto o frase del equipo *']) !!}
     </div>
-    
+
     <!-- Submit Field -->
     <div class="form-group col-sm-12">
         {!! Form::submit('Guardar', ['class' => 'btn btn-primary']) !!}

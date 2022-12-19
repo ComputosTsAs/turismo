@@ -24,15 +24,15 @@ class UpdatePlaceRequest extends FormRequest
      * @return array
      */
     public function rules()
-    {        
+    {
         return [
             'title' => 'required|string|max:60',
             'slug' => 'string|max:60',
             'summary' => 'required|string|max:160',
-            'important_image' => 'mimes:jpg,jpeg,png,bmp,svg',
+            'important_image' => 'mimes:jpg,jpeg,png,bmp,svg,gif',
             'content' => 'required|string',
             'publish' => 'boolean',
-            'galery.*' => 'mimes:jpg,jpeg,png,bmp,svg'
+            'galery.*' => 'mimes:jpg,jpeg,png,bmp,svg,gif'
         ];
     }
 

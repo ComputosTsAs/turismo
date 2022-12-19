@@ -14,8 +14,8 @@ class SiteConfigurationsTableSeeder extends Seeder
         DB::table('site_configurations')->insert([
             'title_place'       =>  'Conoce nuestros lugares destacados',
             'subtitle_place'    =>  'Tres arroyos y la zona.',
-            'title_news'        =>  'Últimas noticias',
-            'subtitle_news'     =>  'Entérate de todas nuestras últimas noticias.',
+            'title_news'        =>  'Últimas experiencias',
+            'subtitle_news'     =>  'Entérate de todas nuestras últimas experiencias.',
             'title_events'      =>  'Últimos eventos',
             'subtitle_events'   =>  'Entérate de todos nuestros últimos eventos.',
             'title_team'        =>  'Nuestro equipo.',

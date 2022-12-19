@@ -73,10 +73,10 @@ class Post extends Model
         'publication_date' => 'required|date_format:Y-m-d H:i:s',
         'content' => 'required|string',
         'post_category_id' => 'required|numeric',
-        'important_image' => 'required|mimes:jpg,jpeg,png,bmp,svg',
+        'important_image' => 'required|mimes:jpg,jpeg,png,bmp,svg,gif',
         'publish' => 'boolean',
         'signature_author' => 'boolean',
-        'galery.*' => 'mimes:jpg,jpeg,png,bmp,svg'
+        'galery.*' => 'mimes:jpg,jpeg,png,bmp,svg,gif'
     ];
 
     /**
@@ -95,10 +95,10 @@ class Post extends Model
         'post_category_id.required' => 'El campo categoría es obligatorio.',
         'post_category_id.numeric' => 'El campo categoría debe ser númerico.',
         'important_image.required' => 'El campo imagen destacada es obligatorio.',
-        'important_image.mimes' => 'El campo imagen destacada debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg.',
+        'important_image.mimes' => 'El campo imagen destacada debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg, gif.',
         'publish.boolean' => 'El campo publicar debe ser verdadero o falso.',
         'signature_author.boolean' => 'El campo firmar debe ser verdadero o falso.',
-        'galery.*.mimes' => 'El campo galería debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg.',
+        'galery.*.mimes' => 'El campo galería debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg, gif.',
     ];
 
     /**

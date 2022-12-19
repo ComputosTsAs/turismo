@@ -50,7 +50,7 @@ class Team extends Model
     public static $rules = [
         'name' => 'required|string|max:80',
         'job' => 'required|string|max:30',
-        'important_image' => 'required|mimes:jpg,jpeg,png,bmp,svg',
+        'important_image' => 'required|mimes:jpg,jpeg,png,bmp,svg,gif',
         'publish' => 'boolean'
     ];
 
@@ -65,7 +65,7 @@ class Team extends Model
         'job.required' => 'El campo trabajo/puesto es obligatorio.',
         'job.max' => 'El campo trabajo/puesto no debe contener más de 30 caracteres.',
         'important_image.required' => 'El campo imagen/avatar es obligatorio.',
-        'important_image.mimes' => 'El campo imagen/avatar debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg.',
+        'important_image.mimes' => 'El campo imagen/avatar debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg, gif.',
         'publish.boolean' => 'El campo publicar debe ser verdadero o falso.',
     ];
 

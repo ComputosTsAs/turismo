@@ -275,7 +275,7 @@ class PostController extends AppBaseController
     public function news()
     {
         $posts = Post::where('publish', 1)->orderBy('publication_date', 'DESC')->paginate(12);
-        $title = 'Todas las noticias';
+        $title = 'Todas las experiencias';
         return view('front.news', compact('posts', 'title'));
     }
 

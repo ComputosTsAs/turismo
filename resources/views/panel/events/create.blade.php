@@ -15,7 +15,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <i class="fa fa-plus-square-o fa-lg"></i>
-                                <strong>Crear Acontecimiento</strong>
+                                <strong>Crear Servicio</strong>
                             </div>
                             <div class="card-body">
                                 {!! Form::open(['route' => 'acontecimientos.store', 'files' => true, 'autocomplete' => 'off']) !!}

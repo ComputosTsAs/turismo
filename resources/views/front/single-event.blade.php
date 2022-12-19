@@ -66,13 +66,13 @@
                                 <span class="input-group-addon">
                                     <button type="submit">
                                         <span class="lnr lnr-magnifier"></span>
-                                    </button>  
+                                    </button>
                                 </span>
                             {!! Form::close() !!}
-                        </div> 
+                        </div>
                     </div>
 
-                    <div class="single_widget">
+                    <!-- <div class="single_widget">
                         <h3 class="text-heading">Datos del evento</h3>
 
                         <p><i class="fa fa-calendar"></i> {!! Date::parse($event->publication_date)->setTimeZone('America/Argentina/Buenos_Aires')->format('d M. Y') !!}</p>
@@ -80,9 +80,9 @@
                         <p><i class="fa fa-clock-o"></i> {!! Date::parse($event->publication_date)->setTimeZone('America/Argentina/Buenos_Aires')->format('H:i') !!}</p>
 
                         <p><i class="fa fa-map-marker"></i> {!! $event->location !!}</p>
-                    </div>
+                    </div> -->
 
-                    @if ($recentEvents->count() == 3)
+                    <!-- @if ($recentEvents->count() == 3)
                     <div class="single_widget recent_widget">
                         <h4 class="text-uppercase pb-20">Últimos eventos</h4>
                         <div class="active-recent-carusel">
@@ -96,12 +96,12 @@
                             @endforeach
                         </div>
                     </div>
-                    @endif
+                    @endif -->
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
-    {{-- End post Area --}}  
+    {{-- End post Area --}}
 </div>
 {{-- End post Area --}}
 

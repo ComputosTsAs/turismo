@@ -198,7 +198,7 @@ class EventController extends AppBaseController
     public function events()
     {
         $events = Event::where('publish', 1)->orderBy('publication_date', 'DESC')->paginate(12);
-        $title = 'Todos los eventos';
+        $title = 'Todos los servicios';
 
         $recentPosts = Post::where('publish', 1)->orderBy('publication_date', 'DESC')->get()->take(3);
 

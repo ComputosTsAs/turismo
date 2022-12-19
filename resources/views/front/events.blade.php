@@ -21,11 +21,11 @@
                 <h1 class="text-white mb-20">{!! $title !!}</h1>
                 <ul>
                     <li><a href="{!! url('/') !!}">Inicio</a><span class="lnr lnr-arrow-right"></span></li>
-                    <li><a href="{!! route('events') !!}">Eventos</a></li>
+                    <li><a href="{!! route('events') !!}">Servicios</a></li>
                 </ul>
             </div>
         </div>
-    </div>  
+    </div>
 </section>
 {{-- End top-section Area --}}
 
@@ -61,7 +61,7 @@
                     </div>
                     <br><br><br>
                     <div class="d-flex justify-content-center">
-                        {!! $events->render() !!}                
+                        {!! $events->render() !!}
                     </div>
                 </div>
                 <div class="col-lg-4 sidebar-area">
@@ -73,15 +73,15 @@
                                 <span class="input-group-addon">
                                     <button type="submit">
                                         <span class="lnr lnr-magnifier"></span>
-                                    </button>  
+                                    </button>
                                 </span>
                             {!! Form::close() !!}
-                        </div> 
+                        </div>
                     </div>
 
                     @if ($recentPosts->count() == 3)
                     <div class="single_widget recent_widget">
-                        <h4 class="text-uppercase pb-20">Últimas noticias</h4>
+                        <h4 class="text-uppercase pb-20">Últimas experiencias</h4>
                         <div class="active-recent-carusel">
                             @foreach ($recentPosts as $recentPost)
                                 <div class="item">
@@ -96,9 +96,9 @@
                     @endif
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
-    {{-- End post Area --}}  
+    {{-- End post Area --}}
 </div>
 {{-- End post Area --}}
 @endsection

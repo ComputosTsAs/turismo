@@ -28,7 +28,7 @@ class UpdateTeamRequest extends FormRequest
         return [
             'name' => 'required|string|max:80',
             'job' => 'required|string|max:30',
-            'important_image' => 'mimes:jpg,jpeg,png,bmp,svg',
+            'important_image' => 'mimes:jpg,jpeg,png,bmp,svg,gif',
             'publish' => 'boolean'
         ];
     }

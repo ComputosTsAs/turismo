@@ -161,7 +161,7 @@ class PostCategoryController extends AppBaseController
         if ($postCategory != null) {
             $posts = $postCategory->postPublished()->orderBy('publication_date', 'DESC')->paginate(12);
 
-            $title = 'Noticias de la categoría: ' . $postCategory->name;
+            $title = 'Experiencias de la categoría: ' . $postCategory->name;
         } else {
             abort(404);
         }

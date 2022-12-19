@@ -14,7 +14,7 @@
                             <i class="fa fa-map-signs p-0 float-right fa-3x"></i>
 
                             <div class="text-value">{!! $places !!}</div>
-                            <div>Lugares totales</div>
+                            <div>Playas totales</div>
                         </div>
                         <div class="chart-wrapper mt-3 mx-3" style="height:30px;">
                         </div>
@@ -27,7 +27,7 @@
                             <i class="fa fa-newspaper-o p-0 float-right fa-3x"></i>
 
                             <div class="text-value">{!! $posts !!}</div>
-                            <div>Posts totales</div>
+                            <div>Experiencias totales</div>
                         </div>
                         <div class="chart-wrapper mt-3 mx-3" style="height:30px;">
                         </div>
@@ -40,14 +40,14 @@
                             <i class="fa fa-calendar p-0 float-right fa-3x"></i>
 
                             <div class="text-value">{!! $events !!}</div>
-                            <div>Acontecimientos totales</div>
+                            <div>Servicios totales</div>
                         </div>
                         <div class="chart-wrapper mt-3 mx-3" style="height:30px;">
                         </div>
                     </div>
                 </div>
                 <!-- /.col-->
-                <div class="col-sm-6 col-lg-3">
+                <!-- <div class="col-sm-6 col-lg-3">
                     <div class="card text-white bg-info">
                         <div class="card-body pb-0">
                             <i class="fa fa-users p-0 float-right fa-3x"></i>
@@ -58,7 +58,7 @@
                         <div class="chart-wrapper mt-3 mx-3" style="height:30px;">
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- /.col-->
             </div>
         </div>

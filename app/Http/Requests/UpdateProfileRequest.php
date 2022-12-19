@@ -26,7 +26,7 @@ class UpdateProfileRequest extends FormRequest
         return [
             'job' => 'nullable|string|max:191',
             'bio' => 'nullable|string|max:191',
-            'image' => 'nullable|mimes:jpg,jpeg,png,bmp,svg',
+            'image' => 'nullable|mimes:jpg,jpeg,png,bmp,svg,gif',
             'password' => 'nullable|string|min:8|max:20|confirmed',
         ];
     }
@@ -36,7 +36,7 @@ class UpdateProfileRequest extends FormRequest
         return [
             'job.max' => 'El campo trabajo / puesto no debe contener más de 191 caracteres.',
             'bio.max'  => 'El campo bio / estado no debe contener más de 191 caracteres.',
-            'image.mimes' => 'El campo imagen destacada debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg.',
+            'image.mimes' => 'El campo imagen destacada debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg, gif.',
             'password.min' => 'El campo contraseña debe contener al menos 8 caracteres.',
             'password.max' => 'El campo contraseña no debe contener más de 20 caracteres.',
             'password.confirmed' => 'El campo confirmación de contraseña no coincide.'

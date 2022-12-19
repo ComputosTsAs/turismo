@@ -93,16 +93,16 @@
                                         <div class="details">
                                             <p>Siguiente noticia</p>
                                             <h4 class="text-uppercase"><a href="{!! route('single.new', [$next_post->category->slug, $next_post->slug]) !!}" aria-label="Siguiente noticia">{!! $next_post->title !!}</a></h4>
-                                        </div>           
+                                        </div>
                                         <div class="thumb">
                                             <img src="{!! url('imagenes/noticia-proxima/' . $next_post->important_image) !!}" alt="Imagen de la noticia {!! $next_post->title !!}">
-                                        </div>                    
+                                        </div>
                                     </div>
                                     @endif
                                 </div>
-                            </div>    
+                            </div>
                         </section>
-                        {{-- End nav Area --}}                        
+                        {{-- End nav Area --}}
                     </div>
                 </div>
                 <div class="col-lg-4 sidebar-area ">
@@ -113,10 +113,10 @@
                                 <span class="input-group-addon">
                                     <button type="submit" title="Buscar">
                                         <span class="lnr lnr-magnifier"></span>
-                                    </button>  
+                                    </button>
                                 </span>
                             {!! Form::close() !!}
-                        </div> 
+                        </div>
                     </div>
 
                     @if ($post->signature_author)
@@ -135,7 +135,7 @@
 
                     @if ($recentPosts->count() == 3)
                     <div class="single_widget recent_widget">
-                        <h4 class="text-uppercase pb-20">Últimas noticias</h4>
+                        <h4 class="text-uppercase pb-20">Últimas experiencias</h4>
                         <div class="active-recent-carusel">
                             @foreach ($recentPosts as $recentPost)
                                 <div class="item">
@@ -158,7 +158,7 @@
                                 </li>
                             @endforeach
                         </ul>
-                    </div> 
+                    </div>
 
                     <div class="single_widget tag_widget">
                         <h4 class="text-uppercase pb-20">Palabras claves</h4>
@@ -167,12 +167,12 @@
                                 <li><a href="{!! route('tag.news', $tag->slug) !!}">{!! $tag->name !!}</a></li>
                             @endforeach
                         </ul>
-                    </div>                                                 
+                    </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
-    {{-- End post Area --}}  
+    {{-- End post Area --}}
 </div>
 {{-- End post Area --}}
 

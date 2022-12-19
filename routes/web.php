@@ -15,21 +15,21 @@ Route::get('/', function () {
     return view('front.home');
 });
 
-Route::get('/noticias', 'PostController@news')->name('news');
+Route::get('/experiencias', 'PostController@news')->name('news');
 
-Route::get('categoria/{category_slug}/noticia/{new_slug}', 'PostController@singleNew')->name('single.new');
+Route::get('categoria/{category_slug}/experiencia/{new_slug}', 'PostController@singleNew')->name('single.new');
 
-Route::get('noticia/buscar', 'PostController@searchNew')->name('search.new');
+Route::get('experiencia/buscar', 'PostController@searchNew')->name('search.new');
 
 Route::get('categoria/{category_slug}', 'PostCategoryController@allNews')->name('category.news');
 
 Route::get('tag/{tag_slug}', 'PostTagController@allNews')->name('tag.news');
 
-Route::get('/eventos', 'EventController@events')->name('events');
+Route::get('/servicios', 'EventController@events')->name('events');
 
-Route::get('evento/buscar', 'EventController@searchEvent')->name('search.event');
+Route::get('servicios/buscar', 'EventController@searchEvent')->name('search.event');
 
-Route::get('evento/{event_slug}', 'EventController@singleEvent')->name('single.event');
+Route::get('servicios/{event_slug}', 'EventController@singleEvent')->name('single.event');
 
 Route::get('lugares/{place_slug}', 'PlaceController@singlePlace')->name('single.place');
 

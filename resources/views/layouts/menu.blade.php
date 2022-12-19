@@ -15,21 +15,21 @@
 <li class="nav-item {{ Request::is('lugar*') ? 'active' : '' }}">
     <a class="nav-link" href="{{ route('lugar.index') }}">
         <i class="nav-icon fa fa-map-signs"></i>
-        <span>Lugares</span>
+        <span>Playas</span>
     </a>
 </li>
 
 <li class="nav-item {{ Request::is('posts*') ? 'active' : '' }}">
     <a class="nav-link" href="{!! route('posts.index') !!}">
         <i class="nav-icon fa fa-newspaper-o"></i>
-        <span>Posts</span>
+        <span>Experiencias</span>
     </a>
 </li>
 
 <li class="nav-item {{ Request::is('acontecimientos*') ? 'active' : '' }}">
     <a class="nav-link" href="{!! route('acontecimientos.index') !!}">
         <i class="nav-icon fa fa-calendar"></i>
-        <span>Acontecimientos</span>
+        <span>Servicios</span>
     </a>
 </li>
 

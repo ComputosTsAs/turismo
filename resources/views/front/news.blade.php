@@ -20,11 +20,11 @@
                 <h1 class="text-white mb-20">{!! $title !!}</h1>
                 <ul>
                     <li><a href="{!! url('/') !!}">Inicio</a><span class="lnr lnr-arrow-right"></span></li>
-                    <li><a href="{!! route('news') !!}">Noticias</a></li>
+                    <li><a href="{!! route('news') !!}">Experiencias</a></li>
                 </ul>
             </div>
         </div>
-    </div>  
+    </div>
 </section>
 {{-- End top-section Area --}}
 
@@ -38,7 +38,7 @@
                 <div class="alert alert-info" role="alert">
                     ¡Perdón! No se han encontrado resultados para su búsqueda.
                 </div>
-            @endif					
+            @endif
             <div class="row">
                 @foreach ($posts as $post)
                     <div class="col-lg-3 col-md-6 single-fashion">
@@ -49,15 +49,15 @@
                             {!! str_limit($post->summary, 57, ' ...') !!}
                         </p>
                     </div>
-                @endforeach						
+                @endforeach
             </div>
-            
+
            <br><br><br>
             <div class="d-flex justify-content-center">
-                {!! $posts->render() !!}                
+                {!! $posts->render() !!}
             </div>
         </div>
-        
+
     </section>
     {{-- End fashion Area --}}
 

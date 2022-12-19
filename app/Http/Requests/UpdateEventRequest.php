@@ -30,7 +30,7 @@ class UpdateEventRequest extends FormRequest
             'slug' => 'string|max:60',
             'summary' => 'required|string|max:160',
             'publication_date' => 'required|date_format:Y-m-d H:i:s',
-            'important_image' => 'mimes:jpg,jpeg,png,bmp,svg',
+            'important_image' => 'mimes:jpg,jpeg,png,bmp,svg,gif',
             'location' => 'required|string|max:80',
             'content' => 'required|string',
             'publish' => 'boolean'

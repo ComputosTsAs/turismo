@@ -161,11 +161,11 @@ class PostTagController extends AppBaseController
         if ($tag != null) {
             $posts = $tag->postPublished()->orderBy('publication_date', 'DESC')->paginate(12);
 
-            $title = 'Noticias del tag: ' . $tag->name;
+            $title = 'Experiencia del tag: ' . $tag->name;
         } else {
             abort(404);
         }
-        
+
 
         return view('front.news', compact('posts', 'title'));
     }

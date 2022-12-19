@@ -45,7 +45,7 @@ class Banner extends Model
      */
     public static $rules = [
         'title' => 'required|string|max:85',
-        'important_image' => 'required|mimes:jpg,jpeg,png,bmp,svg',
+        'important_image' => 'required|mimes:jpg,jpeg,png,bmp,svg,gif',
         'publish' => 'boolean'
     ];
 
@@ -58,7 +58,7 @@ class Banner extends Model
         'title.required' => 'El campo título es obligatorio.',
         'title.max' => 'El campo título no debe contener más de 85 caracteres.',
         'important_image.required' => 'El campo imagen destacada es obligatorio.',
-        'important_image.mimes' => 'El campo imagen destacada debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg.',
+        'important_image.mimes' => 'El campo imagen destacada debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg, gif.',
         'publish.boolean' => 'El campo publicar debe ser verdadero o falso.',
     ];
 }

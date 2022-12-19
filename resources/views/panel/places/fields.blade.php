@@ -16,9 +16,9 @@
     <!-- Important Image Field -->
     <div class="form-group col-sm-12">
         @if(Request::is('lugar/crear'))
-            {!! Field::file('important_image', ['label' => 'Imagen destacada *', 'data-validation' => 'required mime', 'data-validation-allowing' => 'jpg, jpeg, png, bmp, svg']) !!}
+            {!! Field::file('important_image', ['label' => 'Imagen destacada *', 'data-validation' => 'required mime', 'data-validation-allowing' => 'jpg, jpeg, png, bmp, svg, gif']) !!}
         @else
-            {!! Field::file('important_image', ['label' => 'Imagen destacada *', 'data-validation' => 'mime', 'data-validation-allowing' => 'jpg, jpeg, png, bmp, svg']) !!}
+            {!! Field::file('important_image', ['label' => 'Imagen destacada *', 'data-validation' => 'mime', 'data-validation-allowing' => 'jpg, jpeg, png, bmp, svg, gif']) !!}
         @endif
     </div>
 </div>
@@ -35,7 +35,7 @@
 <div class="row">
     <!-- Important Image Field -->
     <div class="form-group col-sm-12">
-        {!! Field::file('galery[]', ['label' => 'Agregar galería de imágenes', 'multiple' => 'multiple', 'data-validation' => 'mime', 'data-validation-allowing' => 'jpg, jpeg, png, bmp, svg']) !!}
+        {!! Field::file('galery[]', ['label' => 'Agregar galería de imágenes', 'multiple' => 'multiple', 'data-validation' => 'mime', 'data-validation-allowing' => 'jpg, jpeg, png, bmp, svg, gif']) !!}
     </div>
 </div>
 

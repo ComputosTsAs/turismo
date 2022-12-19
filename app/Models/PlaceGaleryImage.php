@@ -30,7 +30,7 @@ class PlaceGaleryImage extends Model
      * @var array
      */
     public static $rules = [
-        'image' => 'required|mimes:jpg,jpeg,png,bmp,svg'
+        'image' => 'required|mimes:jpg,jpeg,png,bmp,svg,gif'
     ];
 
     /**
@@ -40,7 +40,7 @@ class PlaceGaleryImage extends Model
      */
     public static $messages_es = [
         'image.required' => 'El campo imagen destacada es obligatorio.',
-        'image.mimes' => 'El campo imagen destacada debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg.',
+        'image.mimes' => 'El campo imagen destacada debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg, gif.',
     ];
 
     public function place()

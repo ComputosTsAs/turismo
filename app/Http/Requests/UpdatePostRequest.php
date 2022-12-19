@@ -31,10 +31,10 @@ class UpdatePostRequest extends FormRequest
             'summary' => 'required|string|max:160',
             'content' => 'required|string',
             'post_category_id' => 'required|numeric',
-            'important_image' => 'mimes:jpg,jpeg,png,bmp,svg',
+            'important_image' => 'mimes:jpg,jpeg,png,bmp,svg,gif',
             'publish' => 'boolean',
             'signature_author' => 'boolean',
-            'galery.*' => 'mimes:jpg,jpeg,png,bmp,svg',
+            'galery.*' => 'mimes:jpg,jpeg,png,bmp,svg,gif',
             'video_iframe' => 'nullable|string|max:191|regex:/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/'
         ];
     }

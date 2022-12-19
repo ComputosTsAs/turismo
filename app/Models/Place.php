@@ -49,7 +49,7 @@ class Place extends Model
         'important_image' => 'string',
         'content' => 'string',
         'publish' => 'boolean',
-        'galery.*' => 'mimes:jpg,jpeg,png,bmp,svg'
+        'galery.*' => 'mimes:jpg,jpeg,png,bmp,svg,gif'
     ];
 
     /**
@@ -61,10 +61,10 @@ class Place extends Model
         'title' => 'required|string|max:60',
         'slug' => 'string|max:60',
         'summary' => 'required|string|max:160',
-        'important_image' => 'required|mimes:jpg,jpeg,png,bmp,svg',
+        'important_image' => 'required|mimes:jpg,jpeg,png,bmp,svg,gif',
         'content' => 'required|string',
         'publish' => 'boolean',
-        'galery.*' => 'mimes:jpg,jpeg,png,bmp,svg'
+        'galery.*' => 'mimes:jpg,jpeg,png,bmp,svg,gif'
     ];
 
     /**
@@ -79,9 +79,9 @@ class Place extends Model
         'summary.max' => 'El campo resumen no debe contener más de 160 caracteres.',
         'content.required' => 'El campo contenido es obligatorio.',
         'important_image.required' => 'El campo imagen destacada es obligatorio.',
-        'important_image.mimes' => 'El campo imagen destacada debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg.',
+        'important_image.mimes' => 'El campo imagen destacada debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg, gif.',
         'publish.boolean' => 'El campo publicar debe ser verdadero o falso.',
-        'galery.*.mimes' => 'El campo galería debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg.',
+        'galery.*.mimes' => 'El campo galería debe ser un archivo de tipo: jpg, jpeg, png, bmp, svg, gif.',
     ];
 
     /**

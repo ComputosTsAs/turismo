@@ -1,5 +1,6 @@
 {{-- Start category Area --}}
-<section class="category-area section-gap" id="lugares">
+<!-- PLAYAS -->
+<section class="category-area section-gap" id="playas">
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="menu-content pb-70 col-lg-8">
@@ -8,7 +9,7 @@
                     <p>{!! $siteConfiguration->subtitle_place !!}</p>
                 </div>
             </div>
-        </div>						
+        </div>
         <div class="active-cat-carusel">
             @foreach ($places as $place)
                 <div class="item single-cat">
@@ -16,13 +17,13 @@
                     <p></p>
                     <h4 class="text-center"><a href="{!! route('single.place', $place->slug) !!}">{!! $place->title !!}</a></h4>
                 </div>
-            @endforeach				
+            @endforeach
         </div>
         {{-- <div class="row">
-            <a href="{!! route('news') !!}" class="primary-btn load-more pbtn-2 text-uppercase mx-auto mt-60">Ver más noticias</a>
-        </div> --}}												
+            <a href="{!! route('news') !!}" class="primary-btn load-more pbtn-2 text-uppercase mx-auto mt-60">Ver más Experiencias</a>
+        </div> --}}
     </div>
-    
-    
+
+
 </section>
 {{-- End category Area --}}
